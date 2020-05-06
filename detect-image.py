@@ -7,7 +7,7 @@ import object_detection.yolo as yl
 import os
 
 # Program arguments
-flags.DEFINE_string('algorithm', 'yolo', 'Object Detection Algorithm')
+flags.DEFINE_string('algorithm', 'YOLOv3', 'Object Detection Algorithm')
 flags.DEFINE_string('model', '', 'Object Detection Model')
 flags.DEFINE_string('image', '/data/images/dog.jpg', 'Input image')
 flags.DEFINE_string('output', './detections/', 'Path to output folder')
@@ -39,10 +39,10 @@ def main(_argv):
     if FLAGS.algorithm == "retinanet":
         print(FLAGS.algorithm)
         rn.retinanet_image(FLAGS.image,FLAGS.model,FLAGS.output)
-    elif FLAGS.algorithm == "yolo":
+    elif FLAGS.algorithm == "YOLOv3":
         print(FLAGS.algorithm)
         yl.yoloImage(FLAGS.image,FLAGS.model,FLAGS.output)
-    elif FLAGS.algorithm == "tiny-yolo":
+    elif FLAGS.algorithm == "tiny-YOLOv3":
         print(FLAGS.algorithm)
         yl.yoloImage(FLAGS.image,FLAGS.model,FLAGS.output)
     elif FLAGS.algorithm == "ssd":
@@ -50,7 +50,7 @@ def main(_argv):
     elif FLAGS.algorithm == "faster-rcnn":
         print(FLAGS.algorithm)
     else:
-        print("Select one of the following algorithms: retinanet, faster-rcnn, ssd, yolo and tiny-yolo.")
+        print("Select one of the following algorithms: retinanet, faster-rcnn, ssd, YOLOv3 and tiny-YOLOv3.")
 
 
 if __name__ == '__main__':

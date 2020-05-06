@@ -154,7 +154,7 @@ def create_model(input_shape, anchors, num_classes, load_pretrained=True, freeze
     out3=model_body.layers[248].output
     bottleneck_model = Model([model_body.input, *y_true], [out1, out2, out3])
 
-    # create last layer model of last layers from yolo model
+    # create last layer model of last layers from YOLOv3 model
     in0 = Input(shape=bottleneck_model.output[0].shape[1:].as_list()) 
     in1 = Input(shape=bottleneck_model.output[1].shape[1:].as_list())
     in2 = Input(shape=bottleneck_model.output[2].shape[1:].as_list())

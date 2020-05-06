@@ -222,7 +222,7 @@ def _main(args):
             all_layers.append(UpSampling2D(stride)(prev_layer))
             prev_layer = all_layers[-1]
 
-        elif section.startswith('yolo'):
+        elif section.startswith('YOLOv3'):
             out_index.append(len(all_layers)-1)
             all_layers.append(None)
             prev_layer = all_layers[-1]

@@ -5,7 +5,7 @@ from tqdm import tqdm
 import argparse
 import fileinput
 
-# function that turns XMin, YMin, XMax, YMax coordinates to normalized yolo format
+# function that turns XMin, YMin, XMax, YMax coordinates to normalized YOLOv3 format
 def convert(filename_str, coords):
     os.chdir("../../vasilis/thesis")
     image = cv2.imread(filename_str + ".jpg")
@@ -24,7 +24,7 @@ def convert(filename_str, coords):
 
 ROOT_DIR = os.getcwd()
 
-# create dict to map class names to numbers for yolo
+# create dict to map class names to numbers for YOLOv3
 classes = {}
 with open("classes.txt", "r") as myFile:
     for num, line in enumerate(myFile, 0):
