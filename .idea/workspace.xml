@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8294b369-84c1-4303-a8d3-984577ed8c61" name="Default Changelist" comment="Uodates upload...">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mask_RCNN/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/balloon/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/coco/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/nucleus/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/shapes/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/darknet" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/video/paris.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/video/road.mp4" afterDir="false" />
@@ -12,6 +17,7 @@
       <change afterPath="$PROJECT_DIR$/models/yolo.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/object_detection/test_ckpt/ssd_inception_v2.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,14 +69,14 @@
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\vasilis\thesis\object_detection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\models" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\tensorflow_libs\object_detection" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\notebooks" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\data\images" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\yolo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.web">
+  <component name="RunManager" selected="Python.SSD_detect_webcam">
     <configuration name="SSD_detect_webcam" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Thesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -188,8 +194,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.web" />
         <item itemvalue="Python.SSD_detect_webcam" />
+        <item itemvalue="Python.web" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.image_detect" />
         <item itemvalue="Python.detect-image" />
@@ -247,7 +253,7 @@
       <workItem from="1588668411586" duration="8103000" />
       <workItem from="1588755717704" duration="12585000" />
       <workItem from="1588803546709" duration="1392000" />
-      <workItem from="1588842874160" duration="6132000" />
+      <workItem from="1588842874160" duration="9812000" />
     </task>
     <task id="LOCAL-00001" summary="Initial upload...🚀">
       <created>1588685584889</created>
@@ -284,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588861381907</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Uodates upload...">
+      <created>1588861999590</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588861999590</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,20 +319,24 @@
       <path value="$PROJECT_DIR$/keras-yolo3" />
     </ignored-roots>
     <MESSAGE value="Initial upload..." />
-    <MESSAGE value="Uodates upload..." />
     <MESSAGE value="Updates" />
     <MESSAGE value="Updates..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates..." />
+    <MESSAGE value="Uodates upload..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uodates upload..." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="447" y="174" width="1089" height="650" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588844288938">
+    <state x="75" y="70" key="#Deployment" timestamp="1588862032021">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="447" y="174" width="1089" height="650" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588844288938" />
-    <state x="476" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588844264952">
+    <state x="75" y="70" key="#Deployment/0.0.1536.824@0.0.1536.824" timestamp="1588862032021" />
+    <state x="298" y="90" width="1089" height="650" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588878744084">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="476" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1588844264952" />
+    <state x="298" y="90" width="1089" height="650" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1588878744084" />
+    <state x="476" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588878786530">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="476" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1588878786530" />
     <state x="772" y="165" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1588280628478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -328,10 +345,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588287783983" />
-    <state x="107" y="6" key="CommitChangelistDialog2" timestamp="1588861369744">
+    <state x="107" y="6" key="CommitChangelistDialog2" timestamp="1588892746301">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="107" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588861369744" />
+    <state x="107" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588892746301" />
     <state x="727" y="261" key="EnvironmentVariablesDialog" timestamp="1588794194146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -340,46 +357,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="166" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588844517762" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1588845365184">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1588892837651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588845365184" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1588845365184">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588892837651" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1588892837651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588845365184" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1588845365184">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588892837651" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1588892837651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588845365184" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1588845365184">
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588892837651" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1588892837651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588845365184" />
-    <state width="1493" height="257" key="GridCell.Tab.1.bottom" timestamp="1588287987498">
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588892837651" />
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom" timestamp="1588878809773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="257" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588287987498" />
-    <state width="1493" height="257" key="GridCell.Tab.1.center" timestamp="1588287987498">
+    <state width="1493" height="257" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588878809773" />
+    <state width="1493" height="257" key="GridCell.Tab.1.center" timestamp="1588878809772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="257" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588287987498" />
-    <state width="1493" height="257" key="GridCell.Tab.1.left" timestamp="1588287987497">
+    <state width="1493" height="257" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1588878809772" />
+    <state width="1493" height="257" key="GridCell.Tab.1.left" timestamp="1588878809772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="257" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588287987497" />
-    <state width="1493" height="257" key="GridCell.Tab.1.right" timestamp="1588287987498">
+    <state width="1493" height="257" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1588878809772" />
+    <state width="1493" height="257" key="GridCell.Tab.1.right" timestamp="1588878809773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="257" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588287987498" />
+    <state width="1493" height="257" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1588878809773" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1588806001413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588806001413" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588861393336">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588892846308">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588861393336" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588892846308" />
     <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1588842907517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -393,7 +410,7 @@
     <SUITE FILE_PATH="coverage/Thesis$tensorflow.coverage" NAME="tensorflow Coverage Results" MODIFIED="1585998664709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vasilis/thesis" />
     <SUITE FILE_PATH="coverage/Thesis$coco.coverage" NAME="coco Coverage Results" MODIFIED="1586015676228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/Mask_RCNN/samples/coco" />
     <SUITE FILE_PATH="coverage/Thesis$ImageAI_camera.coverage" NAME="ImageAI-camera Coverage Results" MODIFIED="1588265711012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vasilis/thesis" />
-    <SUITE FILE_PATH="coverage/Thesis$SSD_detect_webcam.coverage" NAME="SSD_detect_webcam Coverage Results" MODIFIED="1588844076286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Thesis$SSD_detect_webcam.coverage" NAME="SSD_detect_webcam Coverage Results" MODIFIED="1588878809749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Thesis$main.coverage" NAME="main Coverage Results" MODIFIED="1588794773562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/" />
     <SUITE FILE_PATH="coverage/Thesis$trainRestNet.coverage" NAME="trainRestNet Coverage Results" MODIFIED="1586095931130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vasilis/thesis" />
     <SUITE FILE_PATH="coverage/Thesis$yolov3coco.coverage" NAME="yolov3coco Coverage Results" MODIFIED="1587075037956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
