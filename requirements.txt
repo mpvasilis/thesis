@@ -16,8 +16,8 @@ matplotlib
 pycocotools
 matplotlib
 scikit-image
-keras
 h5py
+keras
 imgaug
 IPython[all]
 

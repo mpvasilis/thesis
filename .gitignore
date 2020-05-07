@@ -1,5 +1,4 @@
 weights/*
-!weights/.gitkeep
 data/video/*
 models/*
 *.tar.gz
@@ -9,3 +8,15 @@ models/*
 *.h5
 YOLOv3/model_data/yolo_weights.h5
 ./python
+".\models\mask_rcnn_inception_v2_coco_2018_01_28.tar.gz"
+".\models\resnet50_coco_best_v2.0.1.h5"
+".\models\ssd_inception_v2_coco_2017_11_17.tar.gz"
+".\models\yolo-tiny.h5"
+".\models\yolo.h5"
+".\object_detection\test_ckpt\ssd_inception_v2.pb"
+".\ssd_inception_v2_coco_2017_11_17\frozen_inference_graph.pb"
+".\tensorflow_libs\object_detection\test_ckpt\ssd_inception_v2.pb"
+".\weights\yolov3-tiny.tf.data-00001-of-00002"
+".\weights\yolov3-tiny.weights"
+".\weights\yolov3.tf.data-00001-of-00002"
+".\weights\yolov3.weights"

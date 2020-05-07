@@ -13,22 +13,19 @@ from collections import defaultdict
 from io import StringIO
 from matplotlib import pyplot as plt
 from PIL import Image
-from tensorflow_libs.object_detection.utils import ops as utils_ops
-from tensorflow_libs.object_detection.utils import label_map_util
-from tensorflow_libs.object_detection.utils import visualization_utils as vis_util
+from object_detection.utils import ops as utils_ops
+from object_detection.utils import label_map_util
+from object_detection.utils import visualization_utils as vis_util
 
-# patch tf1 into `utils.ops`
 utils_ops.tf = tf.compat.v1
 
-# Patch the location of gfile
 tf.gfile = tf.io.gfile
 
-# Define the video stream
-cap = cv2.VideoCapture(1)  # Change only if you have more than one webcams
+cap = cv2.VideoCapture(0)
 
 # What model to download.
 # Models can bee found here: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
-MODEL_NAME = 'ssd_inception_v2_coco_2017_11_17'
+MODEL_NAME = 'mask_rcnn_inception_v2_coco_2018_01_28' #'ssd_inception_v2_coco_2017_11_17'
 MODEL_FILE = MODEL_NAME + '.tar.gz'
 DOWNLOAD_BASE = 'http://download.tensorflow.org/models/object_detection/'
 

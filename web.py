@@ -20,15 +20,12 @@ import matplotlib
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
-classes_path = '../data/labels/coco.names'
-weights_path = '../weights/yolov3.tf'
-tiny = False  # set to True if using a Yolov3 Tiny model
-size = 416  # size images are resized to for model
-output_path = './detections/'  # path to output folder where images with detections are saved
-num_classes = 80  # number of classes in model
-
-# load in weights and classes
-
+classes_path = 'data/labels/coco.names'
+weights_path = 'weights/yolov3.tf'
+tiny = False
+size = 416
+output_path = './detections/'
+num_classes = 80
 
 if tiny:
     yolo = YoloV3Tiny(classes=num_classes)
@@ -41,11 +38,9 @@ print('weights loaded')
 class_names = [c.strip() for c in open(classes_path).readlines()]
 print('classes loaded')
 
-# Initialize Flask application
 app = Flask(__name__)
 
 
-# API that returns JSON with classes found in images
 @app.route('/detectionsYolo', methods=['POST'])
 def get_detections():
     raw_images = []
@@ -61,11 +56,9 @@ def get_detections():
 
     num = 0
 
-    # create list for final response
     response = []
 
     for j in range(len(raw_images)):
-        # create list of responses for current image
         responses = []
         raw_img = raw_images[j]
         num += 1
@@ -95,7 +88,6 @@ def get_detections():
         cv2.imwrite(output_path + 'detection' + str(num) + '.jpg', img)
         print('output saved to: {}'.format(output_path + 'detection' + str(num) + '.jpg'))
 
-    # remove temporary images
     for name in image_names:
         os.remove(name)
     try:
@@ -104,7 +96,6 @@ def get_detections():
         abort(404)
 
 
-# API that returns image with detections on it
 @app.route('/imageYolo', methods=['POST'])
 def get_image():
     image = request.files["images"]
@@ -128,13 +119,9 @@ def get_image():
     img = cv2.cvtColor(img_raw.numpy(), cv2.COLOR_RGB2BGR)
     img = draw_outputs(img, (boxes, scores, classes, nums), class_names)
     cv2.imwrite(output_path + 'detection.jpg', img)
-    print('output saved to: {}'.format(output_path + 'detection.jpg'))
-
-    # prepare image for response
     _, img_encoded = cv2.imencode('.png', img)
     response = img_encoded.tostring()
 
-    # remove temporary image
     os.remove(image_name)
 
     try:
@@ -142,7 +129,6 @@ def get_image():
     except FileNotFoundError:
         abort(404)
 
-# API that returns image with detections on it
 @app.route('/imageSSD', methods=['POST'])
 def get_imageSSD():
     image = request.files["images"]
@@ -156,9 +142,7 @@ def get_imageSSD():
     print(detection_model.inputs)
 
     image_np = np.array(tensorflow_libs.tensorflowObjectDetection.Image.open(os.path.join(os.getcwd(), image_name)))
-    # Actual detection.
     output_dict = tensorflow_libs.tensorflowObjectDetection.run_inference_for_single_image(detection_model, image_np)
-    # Visualization of the results of a detection.
     tensorflow_libs.tensorflowObjectDetection.vis_util.visualize_boxes_and_labels_on_image_array(
         image_np,
         output_dict['detection_boxes'],
@@ -172,13 +156,9 @@ def get_imageSSD():
     print('time: {}'.format(t2 - t1))
     cv2.imwrite(output_path + 'detection.jpg', image_np)
     print('output saved to: {}'.format(output_path + 'detection.jpg'))
-    # prepare image for response
     _, img_encoded = cv2.imencode('.png', image_np)
     response = img_encoded.tostring()
-
-    # remove temporary image
     os.remove(image_name)
-
     try:
         return Response(response=response, status=200, mimetype='image/png')
     except FileNotFoundError:

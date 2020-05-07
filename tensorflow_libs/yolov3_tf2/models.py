@@ -25,7 +25,6 @@ from .utils import broadcast_iou
 yolo_max_boxes = 100
 yolo_iou_threshold = 0.5
 yolo_score_threshold = 0.5
-# customize your model through the following parameters
 flags.DEFINE_integer('yolo_max_boxes', 10, 'maximum number of detections at one time')
 flags.DEFINE_float('yolo_iou_threshold', 0.5, 'iou threshold')
 flags.DEFINE_float('yolo_score_threshold', 0.5, 'score threshold')
