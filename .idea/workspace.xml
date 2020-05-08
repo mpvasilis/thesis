@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8294b369-84c1-4303-a8d3-984577ed8c61" name="Default Changelist" comment="Uodates upload...">
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/balloon/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/coco/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/nucleus/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/samples/shapes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/darknet" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/video/paris.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/video/road.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/video/video.mp4" afterDir="false" />
@@ -19,6 +12,16 @@
       <change afterPath="$PROJECT_DIR$/ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OID/convert_annotations.py" beforeDir="false" afterPath="$PROJECT_DIR$/OID/convert_annotations.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/4_CLASS_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/4_CLASS_test_classes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/darknet53.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv3/model_data/darknet53.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/train_bottleneck.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/yolo_train_cpuonly.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/yolov3-tiny.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv3/model_data/yolov3-tiny.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YOLOv3/yolov3.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/YOLOv3/model_data/yolov3.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/darknet" beforeDir="false" afterPath="$PROJECT_DIR$/darknet" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,19 +64,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\YOLOv3\model_data" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\models" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\tensorflow_libs\object_detection" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\notebooks" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\notebooks" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\yolo" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\vasilis\thesis" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\vasilis\thesis\object_detection" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\models" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\tensorflow_libs\object_detection" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\notebooks" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\data\images" />
     </key>
   </component>
   <component name="RunManager" selected="Python.SSD_detect_webcam">
@@ -170,6 +173,9 @@
       <module name="Thesis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\Vasilis\MiniConda3\envs\ThesisTensorflow2\python.exe" />
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop/ThesisMaterial/ObjectDetectionThesis" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -253,7 +259,9 @@
       <workItem from="1588668411586" duration="8103000" />
       <workItem from="1588755717704" duration="12585000" />
       <workItem from="1588803546709" duration="1392000" />
-      <workItem from="1588842874160" duration="9812000" />
+      <workItem from="1588842874160" duration="10451000" />
+      <workItem from="1588939661455" duration="3177000" />
+      <workItem from="1588965456924" duration="919000" />
     </task>
     <task id="LOCAL-00001" summary="Initial upload...🚀">
       <created>1588685584889</created>
@@ -297,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588861999590</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Uodates upload...">
+      <created>1588892762388</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1588892762388</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Uodates upload...">
+      <created>1588892898532</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588892898532</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,14 +363,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="772" y="165" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.824@0.0.1536.824" timestamp="1588280628478" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588287783983">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588966011567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588287783983" />
-    <state x="107" y="6" key="CommitChangelistDialog2" timestamp="1588892746301">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588966011567" />
+    <state x="107" y="6" key="CommitChangelistDialog2" timestamp="1588892888159">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="107" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588892746301" />
+    <state x="107" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588892888159" />
     <state x="727" y="261" key="EnvironmentVariablesDialog" timestamp="1588794194146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -393,14 +415,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588806001413" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588892846308">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588892902133">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588892846308" />
-    <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1588842907517">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588892902133" />
+    <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1588965897588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588842907517" />
+    <state x="465" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588965897588" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thesis$web.coverage" NAME="web Coverage Results" MODIFIED="1588844561733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/ThesisMaterial/ObjectDetectionThesis" />
