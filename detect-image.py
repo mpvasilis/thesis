@@ -1,8 +1,8 @@
 import sys
 from absl import app, flags
 from absl.flags import FLAGS
-import object_detection.retinaNet as rn
-import object_detection.yolo as yl
+import retinaNet as rn
+import yolo as yl
 
 import os
 

@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8294b369-84c1-4303-a8d3-984577ed8c61" name="Default Changelist" comment="Uodates upload...">
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/dataset/train/read.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/dataset/val/read.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/detect_segment_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mask_RCNN/weights/read.txt" afterDir="false" />
+    <list default="true" id="8294b369-84c1-4303-a8d3-984577ed8c61" name="Default Changelist" comment="A">
       <change afterPath="$PROJECT_DIR$/data/video/paris.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/video/road.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/video/video.mp4" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/resnet50_coco_best_v2.0.1.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/yolo-tiny.h5" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/models/yolo.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object_detection/generate_tfrecord.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object_detection/ssd_coco_config.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/object_detection/test_ckpt/ssd_inception_v2.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object_detection/xlm_to_csv.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ssd_inception_v2_coco_2017_11_17/frozen_inference_graph.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mask_RCNN/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mask_RCNN/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Mask_RCNN/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/darknet" beforeDir="false" afterPath="$PROJECT_DIR$/darknet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detect-image.py" beforeDir="false" afterPath="$PROJECT_DIR$/detect-image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_detection/imageai-tinyYolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/imageai-tinyYolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_detection/retinaNet.py" beforeDir="false" afterPath="$PROJECT_DIR$/retinaNet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object_detection/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,19 +61,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\YOLOv3\model_data" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\models" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\tensorflow_libs\object_detection" />
-      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\notebooks" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\notebooks" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\yolo" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\vasilis\thesis" />
       <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\vasilis\thesis\object_detection" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\YOLOv3\model_data" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\models" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\tensorflow_libs\object_detection" />
+      <recent name="C:\Users\Vasilis\PycharmProjects\Thesis\notebooks" />
     </key>
   </component>
   <component name="RunManager" selected="Python.SSD_detect_webcam">
@@ -259,7 +258,11 @@
       <workItem from="1588803546709" duration="1392000" />
       <workItem from="1588842874160" duration="10451000" />
       <workItem from="1588939661455" duration="3177000" />
-      <workItem from="1588965456924" duration="2888000" />
+      <workItem from="1588965456924" duration="4326000" />
+      <workItem from="1589019763608" duration="599000" />
+      <workItem from="1589033615701" duration="1209000" />
+      <workItem from="1589110639643" duration="2629000" />
+      <workItem from="1589145435546" duration="266000" />
     </task>
     <task id="LOCAL-00001" summary="Initial upload...🚀">
       <created>1588685584889</created>
@@ -324,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588966424759</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Uodates upload...">
+      <created>1588976632163</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588976632163</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,9 +357,9 @@
     </ignored-roots>
     <MESSAGE value="Initial upload..." />
     <MESSAGE value="Updates..." />
-    <MESSAGE value="Uodates upload..." />
     <MESSAGE value="Updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates" />
+    <MESSAGE value="Uodates upload..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uodates upload..." />
   </component>
   <component name="WindowStateProjectService">
     <state x="75" y="70" key="#Deployment" timestamp="1588862032021">
@@ -372,10 +382,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1588966011567" />
-    <state x="107" y="6" key="CommitChangelistDialog2" timestamp="1588966413167">
+    <state x="107" y="6" key="CommitChangelistDialog2" timestamp="1589145588215">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="107" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1588966413167" />
+    <state x="107" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589145588215" />
     <state x="727" y="261" key="EnvironmentVariablesDialog" timestamp="1588794194146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -420,14 +430,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588806001413" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588976587353">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589116886445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588976587353" />
-    <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1588965897588">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589116886445" />
+    <state x="465" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1589145473644">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1588965897588" />
+    <state x="465" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589145473644" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Thesis$web.coverage" NAME="web Coverage Results" MODIFIED="1588844561733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Desktop/ThesisMaterial/ObjectDetectionThesis" />
